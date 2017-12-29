@@ -1,4 +1,4 @@
-{% set version = '0.4-11' %}
+{% set version = '0.4-12' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/quantmod_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/quantmod/quantmod_{{ version }}.tar.gz
-  sha256: c73672966194a41c375fab0d7bb54efc1ec513161247fd720670bbdf3a499c40
+  sha256: 18d61d869180670cd5e97bc6cc12ab2939b8b63ae720c89c6e1b041d2680ef78
 
 
   # patches:
@@ -73,8 +73,8 @@ extra:
 # Package: quantmod
 # Type: Package
 # Title: Quantitative Financial Modelling Framework
-# Version: 0.4-11
-# Date: 2017-10-06
+# Version: 0.4-12
+# Date: 2017-12-02
 # Authors@R: c( person(given=c("Jeffrey","A."), family="Ryan", role=c("aut","cph")), person(given=c("Joshua","M."), family="Ulrich", role=c("cre","aut"), email="josh.m.ulrich@gmail.com"), person(given="Wouter", family="Thielen", role="ctb"), person(given="Paul", family="Teetor", role="ctb") )
 # Depends: R (>= 3.2.0), xts(>= 0.9-0), zoo, TTR(>= 0.2), methods
 # Imports: curl
@@ -84,12 +84,12 @@ extra:
 # License: GPL-3
 # URL: http://www.quantmod.com https://github.com/joshuaulrich/quantmod
 # BugReports: https://github.com/joshuaulrich/quantmod/issues
-# NeedsCompilation: yes
-# Packaged: 2017-10-06 17:56:02 UTC; josh
+# NeedsCompilation: no
+# Packaged: 2017-12-02 16:45:04 UTC; josh
 # Author: Jeffrey A. Ryan [aut, cph], Joshua M. Ulrich [cre, aut], Wouter Thielen [ctb], Paul Teetor [ctb]
 # Maintainer: Joshua M. Ulrich <josh.m.ulrich@gmail.com>
 # Repository: CRAN
-# Date/Publication: 2017-10-06 20:33:46 UTC
+# Date/Publication: 2017-12-10 17:13:49 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
