@@ -1,4 +1,4 @@
-{% set version = '0.4-12' %}
+{% set version = '0.4-13' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,18 +12,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/quantmod_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/quantmod/quantmod_{{ version }}.tar.gz
-  sha256: 18d61d869180670cd5e97bc6cc12ab2939b8b63ae720c89c6e1b041d2680ef78
-
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
+  sha256: 60fb13821c9d8d5bea34223b18757f04787f4440cb82946bb9559d6fd26b5499
 
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -77,9 +71,9 @@ extra:
 # Package: quantmod
 # Type: Package
 # Title: Quantitative Financial Modelling Framework
-# Version: 0.4-12
-# Date: 2017-12-02
-# Authors@R: c( person(given=c("Jeffrey","A."), family="Ryan", role=c("aut","cph")), person(given=c("Joshua","M."), family="Ulrich", role=c("cre","aut"), email="josh.m.ulrich@gmail.com"), person(given="Wouter", family="Thielen", role="ctb"), person(given="Paul", family="Teetor", role="ctb") )
+# Version: 0.4-13
+# Date: 2018-04-10
+# Authors@R: c( person(given=c("Jeffrey","A."), family="Ryan", role=c("aut","cph")), person(given=c("Joshua","M."), family="Ulrich", role=c("cre","aut"), email="josh.m.ulrich@gmail.com"), person(given="Wouter", family="Thielen", role="ctb"), person(given="Paul", family="Teetor", role="ctb"), person(given="Steve", family="Bronder", role="ctb") )
 # Depends: R (>= 3.2.0), xts(>= 0.9-0), zoo, TTR(>= 0.2), methods
 # Imports: curl
 # Suggests: DBI,RMySQL,RSQLite,timeSeries,XML,downloader,jsonlite(>= 1.1)
@@ -89,11 +83,11 @@ extra:
 # URL: http://www.quantmod.com https://github.com/joshuaulrich/quantmod
 # BugReports: https://github.com/joshuaulrich/quantmod/issues
 # NeedsCompilation: no
-# Packaged: 2017-12-02 16:45:04 UTC; josh
-# Author: Jeffrey A. Ryan [aut, cph], Joshua M. Ulrich [cre, aut], Wouter Thielen [ctb], Paul Teetor [ctb]
+# Packaged: 2018-04-10 13:06:19 UTC; josh
+# Author: Jeffrey A. Ryan [aut, cph], Joshua M. Ulrich [cre, aut], Wouter Thielen [ctb], Paul Teetor [ctb], Steve Bronder [ctb]
 # Maintainer: Joshua M. Ulrich <josh.m.ulrich@gmail.com>
 # Repository: CRAN
-# Date/Publication: 2017-12-10 17:13:49 UTC
+# Date/Publication: 2018-04-13 12:36:34 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
